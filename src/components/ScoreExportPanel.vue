@@ -101,8 +101,8 @@ function clearExportError() {
 </script>
 
 <template>
-  <section class="bg-white/70 shadow-sm backdrop-blur-xl my-8 border border-white/40 rounded-[24px] overflow-hidden">
-    <header class="px-6 sm:px-8 py-6 border-black/5 border-b">
+  <section class="ffxiv-ui__panel bg-white/70 shadow-sm backdrop-blur-xl my-8 border border-white/20 rounded-[32px] overflow-hidden">
+    <header class="px-6 sm:px-10 py-6 border-black/5 border-b">
       <div class="flex sm:flex-row flex-col sm:justify-between sm:items-baseline gap-2">
         <h2 class="m-0 font-bold text-[#1D1D1F] text-xl">{{ t('scoreExport.title') }}</h2>
         <span v-if="hasScores" class="text-[#86868B] text-sm">
@@ -113,18 +113,18 @@ function clearExportError() {
     </header>
 
     <div v-if="hasScores" class="grid md:grid-cols-2">
-      <div class="flex flex-col gap-4 p-6 sm:p-8 md:border-black/5 md:border-r">
+      <div class="flex flex-col gap-4 p-6 sm:p-10 md:border-black/5 md:border-r text-left">
         <h3 class="m-0 font-semibold text-[#1D1D1F] text-base">{{ t('scoreExport.rawTitle') }}</h3>
         <p class="flex-1 m-0 text-[#6E6E73] text-sm leading-relaxed">{{ t('scoreExport.rawDescription') }}</p>
         <button
-          class="bg-black/5 hover:bg-black/10 px-4 py-3 border-none rounded-xl w-full font-semibold text-[#1D1D1F] active:scale-[0.98] transition-all cursor-pointer"
+          class="bg-black/5 hover:bg-black/10 py-4 border-none rounded-2xl w-full font-semibold text-[#1D1D1F] text-lg active:scale-[0.98] transition-all cursor-pointer"
           @click="exportRawScores"
         >
           {{ t('scoreExport.exportRaw') }}
         </button>
       </div>
 
-      <div class="flex flex-col gap-4 p-6 sm:p-8 border-black/5 border-t md:border-t-0">
+      <div class="flex flex-col gap-4 p-6 sm:p-10 border-black/5 border-t md:border-t-0 text-left">
         <h3 class="m-0 font-semibold text-[#1D1D1F] text-base">{{ t('scoreExport.kinokoTitle') }}</h3>
         <p class="m-0 text-[#6E6E73] text-sm leading-relaxed">{{ t('scoreExport.kinokoDescription') }}</p>
         <div class="space-y-2">
@@ -138,7 +138,7 @@ function clearExportError() {
             autocomplete="off"
             spellcheck="false"
             :placeholder="t('scoreExport.kinokoUseridPlaceholder')"
-            class="box-border bg-black/5 focus:bg-white px-4 py-3 border border-transparent focus:border-[#007AFF]/30 rounded-xl outline-none focus:ring-[#007AFF]/10 focus:ring-4 w-full font-mono text-[#1D1D1F] transition-all"
+            class="box-border bg-black/5 focus:bg-white px-6 py-4 border-none rounded-2xl outline-none focus:ring-[#007AFF]/20 focus:ring-2 w-full font-mono text-[#1D1D1F] text-lg transition-all"
             @input="clearExportError"
             @keyup.enter="exportKinokoScores"
           />
@@ -146,7 +146,7 @@ function clearExportError() {
           <p v-if="exportError" class="m-0 text-[#D70015] text-sm">{{ exportError }}</p>
         </div>
         <button
-          class="bg-[#007AFF] hover:bg-[#0071E3] px-4 py-3 border-none rounded-xl w-full font-semibold text-white active:scale-[0.98] transition-all cursor-pointer"
+          class="bg-[#007AFF] hover:bg-[#0071E3] shadow-[#007AFF]/20 shadow-lg py-4 border-none rounded-2xl w-full font-bold text-white text-lg active:scale-[0.98] transition-all cursor-pointer"
           @click="exportKinokoScores"
         >
           {{ t('scoreExport.exportKinoko') }}
@@ -154,7 +154,7 @@ function clearExportError() {
       </div>
     </div>
 
-    <div v-else class="px-6 py-10 text-center">
+    <div v-else class="px-6 py-20 text-center">
       <p class="m-0 font-semibold text-[#1D1D1F]">{{ t('scoreExport.noScoresTitle') }}</p>
       <p class="m-0 mt-1 text-[#86868B] text-sm">{{ t('scoreExport.noScores') }}</p>
     </div>
