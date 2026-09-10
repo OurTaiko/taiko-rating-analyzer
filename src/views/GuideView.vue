@@ -10,6 +10,7 @@ import SakuraImportTab from '@/components/guide/SakuraImportTab.vue'
 import KinokoImportTab from '@/components/guide/KinokoImportTab.vue'
 import DonderSyncTab from '@/components/guide/DonderSyncTab.vue'
 import ManualImportTab from '@/components/guide/ManualImportTab.vue'
+import ScoreExportPanel from '@/components/ScoreExportPanel.vue'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -305,6 +306,8 @@ const analyze = async (scoreData: UserScore[]) => {
           @analyze="analyze" />
       </Transition>
     </section>
+
+    <ScoreExportPanel />
   </div>
 </template>
 

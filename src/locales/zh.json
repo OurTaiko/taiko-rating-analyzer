@@ -89,6 +89,25 @@
     "screenshot": "保存截图",
     "github": "GitHub 仓库"
   },
+  "scoreExport": {
+    "title": "成绩导出",
+    "description": "选择适合用途的格式，将成绩保存为 JSON 文件",
+    "scoreCount": "共 {count} 条成绩",
+    "rawTitle": "成绩信息备份",
+    "rawDescription": "保留本站使用的完整原始成绩，适合个人备份与数据迁移。",
+    "exportRaw": "导出成绩信息",
+    "kinokoTitle": "菌菌虚拟账号格式",
+    "kinokoDescription": "转换字段后供菌菌控制台虚拟账号导入，最多 5000 条且文件不超过 5 MiB。",
+    "kinokoUserid": "页面目标 ID",
+    "kinokoUseridPlaceholder": "例如 cm224567622",
+    "useridHint": "必须与菌菌控制台页面显示的目标 ID 完全一致。",
+    "kinokoInvalidUserid": "请输入正确的页面目标 ID（cm 加数字）",
+    "kinokoFileTooLarge": "生成的文件超过 5 MiB，无法导出",
+    "exportDataError": "成绩数据无法读取",
+    "exportKinoko": "导出为菌菌虚拟账号格式",
+    "noScoresTitle": "没有可导出的成绩",
+    "noScores": "暂无可导出的成绩，请先在上方导入成绩。"
+  },
   "report": {
     "loading": "正在加载数据…",
     "noData": "未获取到成绩数据或无法计算, 可能是没有魔王难度、里魔王难度成绩",

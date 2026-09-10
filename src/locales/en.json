@@ -89,6 +89,25 @@
     "screenshot": "Save Screenshot",
     "github": "GitHub Repo"
   },
+  "scoreExport": {
+    "title": "Score Export",
+    "description": "Choose a format and save your scores as a JSON file",
+    "scoreCount": "{count} scores available",
+    "rawTitle": "Score Data Backup",
+    "rawDescription": "Keep the complete score data used by this site for personal backup and migration.",
+    "exportRaw": "Export Score Data",
+    "kinokoTitle": "Kinoko Virtual Account Format",
+    "kinokoDescription": "Convert fields for Kinoko Console virtual account import, limited to 5,000 records and 5 MiB.",
+    "kinokoUserid": "Target Page ID",
+    "kinokoUseridPlaceholder": "e.g. cm224567622",
+    "useridHint": "It must exactly match the target ID shown on the Kinoko Console page.",
+    "kinokoInvalidUserid": "Enter a valid target page ID (cm followed by digits)",
+    "kinokoFileTooLarge": "The generated file exceeds 5 MiB and cannot be exported",
+    "exportDataError": "Score data could not be read",
+    "exportKinoko": "Export for Kinoko Virtual Account",
+    "noScoresTitle": "No Scores to Export",
+    "noScores": "No scores are available to export. Import scores above first."
+  },
   "report": {
     "loading": "Loading data...",
     "noData": "No score data found or calculation impossible. Possibly missing Oni/Ura scores.",
